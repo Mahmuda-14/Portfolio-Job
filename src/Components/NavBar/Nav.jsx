@@ -32,8 +32,7 @@ const Nav = () => {
     useEffect(() => {
         fetch('https://portfolio-backend-30mp.onrender.com/api/v1/get/user/65b3a22c01d900e96c4219ae')
             .then(res => res.json())
-            .then(data => {
-                // console.log(data);
+            .then(data => {           
                 setSocials(data.user.social_handles);
 
 
@@ -86,7 +85,7 @@ const Nav = () => {
 
                         <li>
 
-                            <Link className=' navbar-link'><HashLink smooth to="#contact">Contact</HashLink></Link>
+                            <Link className=' navbar-link'><HashLink smooth to="#testimonial">Testimonial</HashLink></Link>
                         </li>
 
                     </ul>
@@ -139,7 +138,7 @@ const Nav = () => {
 
                         <li>
 
-                            <Link className=' navbar-link'><HashLink smooth to="#contact">Contact</HashLink></Link>
+                            <Link className=' navbar-link'><HashLink smooth to="#testimonial">Testimonial</HashLink></Link>
                         </li>
 
                     </ul>

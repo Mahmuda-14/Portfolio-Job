@@ -12,7 +12,7 @@ const Testimonial = () => {
         fetch('https://portfolio-backend-30mp.onrender.com/api/v1/get/user/65b3a22c01d900e96c4219ae')
             .then(res => res.json())
             .then(data => {
-                console.log(data);
+             
                 setReview(data.user.testimonials);
 
             })
@@ -20,7 +20,7 @@ const Testimonial = () => {
     return (
 
 
-        <div className="container mt-10 mb-[15.5rem]">
+        <div id="testimonial" className="container mt-10 mb-[15.5rem]">
 
             <div className="text-center mb-8">
                 <h2 className="h3" id="project-label">Some Of My Clients Review..</h2>
